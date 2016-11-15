@@ -66,7 +66,7 @@
     </style>
   </head>
   <body>
-    <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-50 mdl-layout--fixed-tabs">
+    <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-50">
       <header class="demo-header mdl-layout__header">
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title">What is universal adversarial perturbation?</span>
@@ -80,27 +80,29 @@
               <label class="mdl-textfield__label" for="search">Enter your query...</label>
             </div>
           </div-->
-        </div>
-        <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-          <a href="#scroll-tab-abs" class="mdl-layout__tab is-active">Abstract</a>
-          <a href="#scroll-tab-vid" class="mdl-layout__tab">Video</a>
-          <a href="#scroll-tab-link" class="mdl-layout__tab">Links</a>
+          <nav class="mdl-navigation">
+            <a href="#scroll-tab-abs" class="mdl-navigation__link">Abstract</a>
+            <a href="#scroll-tab-vid" class="mdl-navigation__link">Video</a>
+            <a href="#scroll-tab-link" class="mdl-navigation__link">Links</a>
+          </nav>
         </div>
       </header>
       <div class="demo-ribbon mdl-color--blue-300"></div>
       <main class="demo-main mdl-layout__content">
         <div class="demo-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            <h3 id="scroll-tab-abs">Universal Adversarial Perturbations</h3>
+          <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col" id="scroll-tab-abs">
+            <h3>Universal Adversarial Perturbations</h3>
               <p align="justify" class="mdl-color-text--grey-600">Given a state-of-the-art deep neural network classifier, we show the existence of a universal (image-agnostic) and very small perturbation vector that causes natural images to be misclassified with high probability. We propose a systematic algorithm for computing universal perturbations, and show that state-of-the-art deep neural networks are highly vulnerable to such perturbations, albeit being quasi-imperceptible to the human eye. We further empirically analyze these universal perturbations and show, in particular, that they generalize very well across neural networks. The surprising existence of universal perturbations reveals important geometric correlations among the high-dimensional decision boundary of classifiers. It further outlines potential security breaches with the existence of single directions in the input space that adversaries can possibly exploit to break a classifier on most natural images.</p>
+              <br />
               <p align="center">
                 <img src="images/main_fig.png" width="420"/>
               </p>
-              <p id ="scroll-tab-vid">
-                <iframe id="player" type="text/html" width="640" height="390" src="https://www.youtube.com/embed/jhOu5yhe0rc?enablejsapi=1" frameborder="0"></iframe>
+              <br /><br /><br />
+              <p class="mdl-tabs__panel" id="scroll-tab-vid">
+                <iframe id="player" type="text/html" width="600" height="400" src="https://www.youtube.com/embed/jhOu5yhe0rc?enablejsapi=1" frameborder="0"></iframe>
               </p>
-              <p align="center" id="scroll-tab-link"><a href="https://arxiv.org/abs/1610.08401" target="_blank" class="mdl-button mdl-js-button mdl-color-text--accent">arXiv.org</a>
+              <p align="center" id="scroll-tab-link"><a href="https://arxiv.org/pdf/1610.08401v1" target="_blank" class="mdl-button mdl-js-button mdl-color-text--accent">arXiv.org</a>
                 <a href="https://github.com/universalperturbations" target="_blank"><i class="fa fa-github fa-3x" style="color:#FF5252"></i></a>
             </p>
           </div>
